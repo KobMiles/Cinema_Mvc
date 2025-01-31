@@ -68,9 +68,9 @@ Web (MyCinema.Web)
 
 ```mermaid
 graph TD;
-    A[Web (MyCinema.Web)] -->|Calls| B[Application (MyCinema.Application)];
-    B -->C[Domain (MyCinema.Domain)];
-    B -->D[Infrastructure (MyCinema.Infrastructure)];
+    A-->B;
+    B -->C;
+    B -->D;
     C -->D;
 ```
 
