@@ -67,11 +67,11 @@ Web (MyCinema.Web)
 ## Architecture Diagram (Mermaid)
 
 ```mermaid
-graph TD;
-    A[Web (MyCinema.Web)] --> B[Application (MyCinema.Application)];
-    B --> C[Domain (MyCinema.Domain)];
-    B --> D[Infrastructure (MyCinema.Infrastructure)];
-    C --> D;
+graph TD
+    A[Web (MyCinema.Web)] -->|Calls| B[Application (MyCinema.Application)]
+    B -->|Uses| C[Domain (MyCinema.Domain)]
+    B -->|Interfaces with| D[Infrastructure (MyCinema.Infrastructure)]
+    C -->|May use| D
 ```
 
 ## Project Principles
