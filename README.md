@@ -69,9 +69,9 @@ Web (MyCinema.Web)
 ```mermaid
 graph TD;
     A[Web (MyCinema.Web)] -->|Calls| B[Application (MyCinema.Application)];
-    B -->|Uses| C[Domain (MyCinema.Domain)];
-    B -->|Interfaces with| D[Infrastructure (MyCinema.Infrastructure)];
-    C -->|May use| D;
+    B -->C[Domain (MyCinema.Domain)];
+    B -->D[Infrastructure (MyCinema.Infrastructure)];
+    C -->D;
 ```
 
 ## Project Principles
